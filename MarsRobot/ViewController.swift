@@ -17,7 +17,7 @@ enum Direction: Character {
 
 class Plateau: NSObject {
     var linhas: [[Int]]
-
+    
     init(height: Int, width: Int) {
         linhas = [[Int]]()
         for _ in 0...height {

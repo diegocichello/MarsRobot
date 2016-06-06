@@ -113,10 +113,7 @@ class Robot: NSObject {
             plateau.linhas[currentX][currentY] = 0
             plateau.linhas[x][y] = 1
         }
-
         return collision
-
-
     }
 }
 

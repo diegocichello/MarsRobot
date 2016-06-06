@@ -34,11 +34,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        createInput()
+    }
 
+    func createInput() {
         let file = "input.txt"
-        let text = "10 10\n1 2 N\nEAEAEAEAA\n6 4 N\nEAEADDAA\n3 3 L\nAADAADADDA"
+        let text = "5 5\n1 2 N\nEAEAEAEAA\n3 3 L\nAADAADADDA"
         let inputString : String
-
         if let dir = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.AllDomainsMask, true).first {
             let path = NSURL(fileURLWithPath: dir).URLByAppendingPathComponent(file)
             do {
